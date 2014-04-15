@@ -13,8 +13,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
     config.vm.provision :shell, :path => "install.sh"
 
-    config.vm.synced_folder "/var/www", "/www", :mount_options => ["dmode=777", "fmode=666"]
-    config.vm.synced_folder "/var/wwws", "/wwws", :mount_options => ["dmode=777", "fmode=666"]
+    config.vm.synced_folder "/var/www", "/www", :mount_options => ["dmode=777", "fmode=777"]
+    config.vm.synced_folder "/var/wwws", "/wwws", :mount_options => ["dmode=777", "fmode=777"]
 
     # If true, then any SSH connections made will enable agent forwarding.
     # Default value: false
